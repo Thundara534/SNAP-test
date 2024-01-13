@@ -33,6 +33,8 @@
 &kp F15      &kp LSHFT   &kp NUHS &kp Z    &kp X    &kp C    &kp V    &kp B      &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH    &kp RSHFT                &kp UP     &kp PG_DN
 &kp F16      &kp LCTRL   &kp LGUI &kp LALT          &mo 1            &kp SPACE    &kp BSPC                   &mo 1    &kp RALT    &kp RCTRL   &kp LEFT     &kp DOWN   &kp RIGHT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         function_layer {
@@ -45,7 +47,9 @@
 &trans       &trans      &trans   &trans   &trans   &trans            &trans     &trans   &trans   &trans   &trans    &trans      &trans                   &trans     &trans
 &trans       &trans      &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans          &rgb_ug RGB_TOG &rgb_ug RGB_BRI &rgb_ug RGB_EFF
 &trans       &trans      &trans   &trans            &trans           &trans       &trans                    &trans    &trans  &trans  &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_HUI
-            >;
+              >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
